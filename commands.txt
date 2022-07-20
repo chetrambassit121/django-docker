@@ -32,3 +32,12 @@ Setting the non-empty value of PYTHONUNBUFFERED means
 that the python output is transmitted directly to the 
 terminal without being buffered and that allows displaying 
 the application’s output in real-time. 
+
+
+part #5 .. django react docker 
+npx create-react-app my-app
+docker build --tag react .
+docker run react
+docker run --publish 3000:3000 react
+docker-compose build .
+docker-compose run app
