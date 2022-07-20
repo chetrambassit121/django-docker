@@ -73,6 +73,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+#sqlite3 database 
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -80,15 +81,28 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
+# #postgressql database 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': 'password123',
+#         'HOST': 'db',
+#         'PORT': 5432,
+#     }
+# }
 
+
+#mysql database 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'password123',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django-app-db',
+        'USER': 'root',
+        'PASSWORD': '',
         'HOST': 'db',
-        'PORT': 5432,
+        'PORT': '3306',
     }
 }
 
